@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .nav{
+    @apply flex  justify-between items-center ;
+  }
+  .header{
+    @apply px-5 py-3 bg-gradient-to-r from-blue-800 to-blue-700 text-white sticky top-0 font-body;
+  }
+  .nav-list{
+    @apply space-x-3 uppercase text-sm font-semibold;
+  }
+  .btn-pri{
+    @apply bg-gradient-to-r from-blue-800 via-blue-700 to-blue-800 text-sm text-white px-2 py-1 rounded ml-1 hover:from-blue-700  hover:to-blue-700 transition ease-out duration-500;
+  }
+  .btn-sec{
+    @apply  bg-gradient-to-r from-blue-800  to-blue-800  text-xs text-white px-2 py-2 rounded hover:from-blue-700  hover:to-blue-700 transition ease-out duration-500 w-20;
+  }
+  .card{
+    @apply bg-white rounded shadow px-3 py-4 cursor-pointer h-40;
+  }
+  .label{
+    @apply block px-2 uppercase  text-white  text-xs;
+  }
+  .input{
+      @apply focus:outline-none w-full px-3 py-2 rounded my-2  shadow-md;
+  }
+  .input-pri{
+      @apply focus:outline-none w-48 text-gray-950 py-1 text-sm px-2 rounded shadow-md;
+  }
+  .input-sec{
+      @apply focus:outline-none w-full px-3 py-7 rounded my-2  shadow-md;
+  }
+  .form{
+      @apply bg-blue-800 p-3 rounded shadow-md  md:max-w-2xl my-3 md:my-5 md:mx-auto;
+  }
+  .btn{
+    @apply bg-blue-600 p-2 rounded shadow-lg text-white cursor-pointer w-full hover:bg-blue-700 hover:text-white;
+  }
+  .footer{
+    @apply  bottom-0 left-0 right-0 fixed bg-gray-100 px-3  font-body;
+  }
+  .btn-act{
+    @apply w-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-800 hover:from-blue-700 hover:via-blue-800 hover:to-blue-700 text-white rounded-md shadow-2xl text-sm py-2;
+  }
+  .sidebar-list{
+    @apply flex flex-col text-blue-900 text-sm font-semibold leading-relaxed space-y-3 shadow py-4 px-2 mt-5;
+  }
+  .sidebar-header{
+    @apply bg-gradient-to-r from-blue-800 via-blue-700 to-blue-800 pt-24 rounded-br px-3 pb-1;
+  }
+}
